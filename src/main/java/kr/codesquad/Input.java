@@ -3,11 +3,8 @@ package kr.codesquad;
 import java.util.Scanner;
 
 public class Input {
-    private static final String INPUT_PLAYERS_MESSAGE = "몇분이서 오셨어요?";
-    private static final String INPUT_HEIGHT_MESSAGE = "얼마나 길게 하려고?";
-
-    public int inputPlayers() {
-        System.out.println(INPUT_PLAYERS_MESSAGE);
+        public int inputPlayers() {
+        System.out.println("몇분이서 오셨어요?");
         Scanner scanner = new Scanner(System.in);
         int players = scanner.nextInt();
 
@@ -15,7 +12,7 @@ public class Input {
     }
 
     public int inputHeight() {
-        System.out.println(INPUT_HEIGHT_MESSAGE);
+        System.out.println("얼마나 길게 하려고?);
         Scanner scanner = new Scanner(System.in);
         int height = scanner.nextInt();
 
