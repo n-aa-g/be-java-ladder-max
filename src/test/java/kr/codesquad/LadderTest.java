@@ -31,4 +31,10 @@ class LadderTest {
         String figure = ladder.drawLadder();
         assertThat(figure).isEqualTo("|=====|     |     |=====|\n|     |     |=====|     |\n");
     }
+
+    @Test
+    void playTest() {
+        List<Integer> result = ladder.play(5);
+        assertThat(result).isEqualTo(List.of(1, 0, 4, 2, 3));
+    }
 }
