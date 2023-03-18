@@ -39,7 +39,7 @@ public class View {
     }
 
     public int inputHeight() {
-        System.out.println("얼마나 길게 만들길 원하시오?");
+        System.out.println("얼마나 길게 만들길 원하시오??");
         String height = sc.nextLine();
 
         return Integer.parseInt(height);
