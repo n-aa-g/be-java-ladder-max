@@ -21,6 +21,24 @@ public class Ladder {
         return sb.toString();
     }
 
+    public List<Integer> play(int numberOfPlayers) {
+        List<Integer> position = initializePosition(numberOfPlayers);
+
+        for (Line line : ladder) {
+            line.ride(position);
+        }
+        return position;
+    }
+
+    private List<Integer> initializePosition(int size) {
+        List<Integer> position = new ArrayList<>();
+
+        for (int cnt = 0; cnt < size; cnt++) {
+            position.add(cnt);
+        }
+        return position;
+    }
+
     public int getLadderSize() {
         return this.ladder.size();
     }
