@@ -59,4 +59,18 @@ public class View {
         }
         return sb.toString();
     }
+
+    public List<String> inputResult() {
+        System.out.println("결과를 입력하거라");
+        String[] splitResult = this.sc.nextLine().split(",");
+
+        return Arrays.asList(splitResult);
+    }
+
+    public void printResult(List<String> players, List<Integer> outcome, List<String> result) {
+        System.out.println("말해보거라. 누구의 결과가 보고싶느냐");
+        String name = sc.nextLine();
+        System.out.println("결과를 발표하겠다");
+        System.out.println(result.get(outcome.indexOf(players.indexOf(name))));
+    }
 }
